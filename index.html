@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <h1 class="text-center">Moltenus spawn time calculator</h1>
+      <div class="row border rounded py-4 mt-4">
+        <div class="col">
+          <form>
+            <div class="mb-3">
+              <label for="input-time" class="h2 form-label">Event time</label>
+              <input
+                type="datetime-local"
+                class="form-control js-date-input"
+                id="input-time"
+              />
+            </div>
+            <button
+              class="btn btn-secondary js-current-time-button"
+              type="button"
+            >
+              Current time
+            </button>
+          </form>
+        </div>
+
+        <div class="col">
+          <h2>Spawn time</h2>
+          <div class="mt-4">
+            <p>After death:</p>
+            <p><b class="js-after-kill-time"></b></p>
+            <button
+              class="btn btn-secondary js-after-kill-discord-time-copy-button"
+              type="button"
+            >
+              Copy Discord timestamp
+            </button>
+          </div>
+          <hr />
+          <div>
+            <p>After restart:</p>
+            <p><b class="js-after-restart-time"></b></p>
+            <button
+              class="btn btn-secondary js-after-restart-discord-time-copy-button"
+              type="button"
+            >
+              Copy Discord timestamp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

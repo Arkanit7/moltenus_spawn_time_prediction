@@ -1,0 +1,17 @@
+{
+  "name": "moltenus_spawn_time_prediction",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2",
+    "vite": "^7.1.7"
+  }
+}
