@@ -15,6 +15,7 @@ const afterRestartCopyBtn = document.querySelector(
 
 const dateInputEl = document.querySelector('.js-date-input')
 
+/** @param {number} dateInputEl */
 function setCurrentTime(dateInputEl) {
   const currentTime = new Date()
   // Pad numbers to two digits
@@ -35,6 +36,7 @@ currentTimeBtn.addEventListener('click', () => {
   emitDateChange({currentTarget: dateInputEl})
 })
 
+/** @param {number} hoursPassed */
 function handleCopyTimeToClipboard(hoursPassed) {
   const time = dateInputEl.value
   const date = new Date(time)
@@ -67,6 +69,11 @@ function updateDate(targetEl, newDate) {
   targetEl.textContent = dateTimeFormatter.format(newDate)
 }
 
+/**
+ * @param {number} hoursPassed
+ * @param {Date} date
+ * @returns {Date}
+ */
 function getDateAfterHoursPassed(hoursPassed, date) {
   const newDate = structuredClone(date)
   newDate.setHours(newDate.getHours() + hoursPassed)

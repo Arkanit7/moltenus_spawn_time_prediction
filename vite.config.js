@@ -2,6 +2,7 @@ import {defineConfig} from 'vite'
 
 /** @see https://vite.dev/config/ */
 export default defineConfig({
+  // base: '/moltenus_spawn_time_prediction/',
   server: {
     open: true,
   },
